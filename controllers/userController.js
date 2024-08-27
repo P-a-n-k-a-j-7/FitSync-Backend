@@ -51,7 +51,7 @@ exports.login = async (req, res) => {
       email: user.email,
     };
 
-    const jwtSecretKey = "A123";
+    const jwtSecretKey = process.env.JWT_SECRET;
 
     const token = await UserServices.generateToken(
       tokenData,
