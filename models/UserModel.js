@@ -22,28 +22,28 @@ const UserSchema = new Schema(
     },
     age: {
       type: Number,
-      required: [true, "Age is required"],
+      required: [false, "Age is required"],
     },
     gender: {
       type: String,
       enum: ["male", "female", "other"],
-      required: [true, "Gender is required"],
+      required: [false, "Gender is required"],
     },
     height: {
       type: Number,
-      required: [true, "Height is required"],
+      required: [false, "Height is required"],
     },
     weight: {
       type: Number,
-      required: [true, "Weight is required"],
+      required: [false, "Weight is required"],
     },
     goal: {
       type: String,
-      required: [true, "Goal is required"],
+      required: [false, "Goal is required"],
     },
     activity: {
       type: String,
-      required: [true, "Activity level is required"],
+      required: [false, "Activity level is required"],
     },
   },
   { timestamps: true }
